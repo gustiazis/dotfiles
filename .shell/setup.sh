@@ -23,7 +23,6 @@ ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl /usr/local
 
 # Packages for Sublime Text.
 
-# Alignment
 # Babel
 # Babel Snippets
 # DocBlockr
