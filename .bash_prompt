@@ -1,0 +1,142 @@
+# Bash prompt.
+if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
+	export TERM='gnome-256color';
+elif infocmp xterm-256color >/dev/null 2>&1; then
+	export TERM='xterm-256color';
+fi;
+
+bash_prompt() {
+	# GIT Prompt,
+	local symbol='';
+	local branch='';
+
+	# Check if the current directory is in a Git repository.
+	if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
+
+		# Check if the current directory is in .git before running git checks,
+		if [ "$(git rev-parse --is-inside-git-dir 2> /dev/null)" == 'false' ]; then
+
+			# Ensure the index is up to date.
+			git update-index --really-refresh -q &>/dev/null;
+
+			# Check for uncommitted changes in the index.
+			if ! $(git diff --quiet --ignore-submodules --cached); then
+				symbol+='+';
+			fi;
+
+			# Check for unstaged changes.
+			if ! $(git diff-files --quiet --ignore-submodules --); then
+				symbol+='!';
+			fi;
+
+			# Check for untracked files.
+			if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+				symbol+='?';
+			fi;
+
+			# Check for stashed files.
+			if $(git rev-parse --verify refs/stash &>/dev/null); then
+				symbol+='$';
+			fi;
+
+		fi;
+
+		# Get the short symbolic ref.
+		# If HEAD isn’t a symbolic ref, get the short SHA for the latest commit,
+		# Otherwise, just give up.
+		branch="$(git symbolic-ref --quiet --short HEAD 2> /dev/null || \
+			git rev-parse --short HEAD 2> /dev/null || \
+			echo '(unknown)')";
+
+		[ -n "${symbol}" ] && symbol=" [${symbol}]";
+
+		echo -e "${1}${branch}${2}${symbol}";
+	else
+		return;
+	fi;
+}
+
+if tput setaf 1 &> /dev/null; then
+	tput sgr0; # Reset Colors
+	# "ac" Stand For Ansi Color.
+	ac_bold=$(tput bold);
+	ac_reset=$(tput sgr0);
+	# Default ANSI Colors Escape, Normal and Bright.
+	ac_black=$(tput setaf 0);
+	ac_red=$(tput setaf 1);
+	ac_green=$(tput setaf 2);
+	ac_yellow=$(tput setaf 3);
+	ac_blue=$(tput setaf 4);
+	ac_magenta=$(tput setaf 5);
+	ac_cyan=$(tput setaf 6);
+	ac_white=$(tput setaf 7);
+	ac_brightblack=$(tput setaf 8);
+	ac_brightred=$(tput setaf 9);
+	ac_brightgreen=$(tput setaf 10);
+	ac_brightyellow=$(tput setaf 11);
+	ac_brightblue=$(tput setaf 12);
+	ac_brightmagenta=$(tput setaf 13);
+	ac_brightcyan=$(tput setaf 14);
+	ac_brightwhite=$(tput setaf 15);
+else
+	# "ac" Stand For Ansi Color.
+	ac_bold='';
+	ac_reset="\e[0m";
+	# Default ANSI Colors, Normal and Bright.
+	ac_black="\e[0;30m";
+	ac_red="\e[0;31m";
+	ac_green="\e[0;32m";
+	ac_yellow="\e[0;33m";
+	ac_blue="\e[0;34m";
+	ac_magenta="\e[0;35m";
+	ac_cyan="\e[0;36m";
+	ac_white="\e[0;37m";
+	ac_brightblack="\e[1;30m";
+	ac_brightred="\e[1;31m";
+	ac_brightgreen="\e[1;32m";
+	ac_brightyellow="\e[1;33m";
+	ac_brightblue="\e[1;34m";
+	ac_brightmagenta="\e[1;35m";
+	ac_brightcyan="\e[1;36m";
+	ac_brightwhite="\e[1;37m";
+fi;
+
+# Highlight the user name when logged in as root.
+if [[ "${USER}" == "root" ]]; then
+	style_user="${ac_red}";
+else
+	style_user="${ac_blue}";
+fi;
+
+# Highlight the hostname when connected via SSH.
+if [[ "${SSH_TTY}" ]]; then
+	style_host="${ac_bold}${ac_brightred}";
+else
+	style_host="${ac_brightblue}";
+fi;
+
+# Set the terminal title to the current working directory.
+PS1="\[\033]0;\W\007\]";
+PS1+="\[${ac_bold}\]"; # bold
+PS1+="\[${style_user}\]\u"; # username
+PS1+="\[${ac_brightblack}\] at ";
+PS1+="\[${style_host}\]\h"; # host
+PS1+="\[${ac_brightblack}\] in ";
+PS1+="\[${ac_cyan}\]\w"; # working directory
+PS1+="\$(bash_prompt \"\[${ac_brightblack}\] on \[${ac_magenta}\]\" \"\[${ac_blue}\]\")"; # Git repository details
+PS1+="\n";
+PS1+="\[${ac_brightblack}\]\$ \[${ac_reset}\]"; # `$` (and reset color)
+export PS1;
+
+PS2="\[${ac_green}\]→ \[${ac_reset}\]";
+export PS2;
+
+# GIT_PS1_SHOWDIRTYSTATE=1
+# GIT_PS1_SHOWSTASHSTATE=1
+# GIT_PS1_SHOWUNTRACKEDFILES=1
+# GIT_PS1_SHOWCOLORHINTS=1
+# GIT_PS1_SHOWUPSTREAM="auto verbose git"
+# GIT_PS1_DESCRIBE_STYLE="branch"
+
+# PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+# PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'

@@ -1,0 +1,104 @@
+[alias]
+
+	# Better Shortcuts.
+	a = add
+	b = branch
+	c = checkout
+	f = fetch --all --prune --verbose
+	l = log --pretty=oneline --graph --abbrev-commit
+	m = merge
+	r = reset
+	s = status -s
+	cl = clone --recursive
+	cm = commit
+	pl = pull
+	ps = push
+
+	# Commit all changes.
+	ca = !git add -A && git commit -av
+
+	# Switch to a branch, creating it if necessary.
+	cb = "!f() { git checkout -b \"$1\" 2> /dev/null || git checkout \"$1\"; }; f"
+
+	# Show the diff between the latest commit and the current state.
+	df = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
+
+	# Show verbose output about tags, branches or remotes.
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+
+	# Amend the currently staged files to the latest commit
+	amend = commit --amend --reuse-message=HEAD
+	# amend = commit --amend --no-edit
+
+	# Credit an author on the latest commit.
+	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
+
+	# Find commits by source code.
+	fc = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short -S$1; }; f"
+
+	# Find commits by commit message.
+	fm = "!f() { git log --pretty=format:'%C(yellow)%h  %Cblue%ad  %Creset%s%Cgreen  [%cn] %Cred%d' --decorate --date=short --grep=$1; }; f"
+
+	# List contributors with number of commits.
+	contributors = shortlog --summary --numbered
+
+	# Ignore files only locally.
+	au = !"git update-index --assume-unchanged"
+
+[apply]
+
+	whitespace = fix
+
+[core]
+
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	trustctime = false
+	editor = subl -n -w
+
+[color]
+
+	ui = auto
+
+[diff]
+
+	renames = copies
+
+[diff "bin"]
+
+	textconv = hexdump -v -C
+
+[help]
+
+	autocorrect = 1
+
+[pull]
+
+	default = current
+
+[push]
+
+	default = current
+
+
+[url "git@github.com:"]
+
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+
+	insteadOf = "github:"
+
+[user]
+
+	name = Gusti Azis
+	email = gooazs@gmail.com
+
+[credential]
+
+	helper = osxkeychain
