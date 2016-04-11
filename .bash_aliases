@@ -25,6 +25,7 @@ alias chrome="open -a Google\ Chrome"
 alias firefox="open -a Firefox"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 alias watch="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator (Watch).app"
+alias clear-simulator="xcrun simctl erase all"
 
 # URLs.
 alias github="chrome 'http://github.com/gustiazis'"
