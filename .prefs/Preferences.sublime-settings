@@ -3,6 +3,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/base16-monokai.dark (SL).tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
+	"draw_white_space": "all",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": false,
 	"fade_fold_buttons": false,
@@ -26,6 +27,7 @@
 	"font_size": 14,
 	"ignored_packages":
 	[
+		"JavaScript",
 		"Vintage"
 	],
 	"match_brackets_angle": true,
