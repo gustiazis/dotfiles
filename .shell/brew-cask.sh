@@ -43,6 +43,7 @@ brew cask install flash-player
 brew cask install id3-editor
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install inkscape
 brew cask install iterm2
 # brew cask install jpegmini
 brew cask install java7
