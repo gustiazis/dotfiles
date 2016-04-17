@@ -41,9 +41,11 @@ brew install screen
 # Install other useful binaries.
 brew install ack
 # brew install exiv2
+brew install ffmpeg
+brew install gifsicle
 brew install git
 brew install git-lfs
-# brew install imagemagick --with-webp
+brew install imagemagick
 # brew install lynx
 brew install mongodb
 brew install ngrep
