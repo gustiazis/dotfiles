@@ -54,6 +54,7 @@ brew install node
 # brew install rhino
 brew install rename
 brew install redis
+brew install rtmpdump
 brew install testssl
 brew install tree
 # brew install webkit2png
