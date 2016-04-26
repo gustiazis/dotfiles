@@ -35,6 +35,7 @@ brew cask install provisionql
 brew cask install aerial
 brew cask install appcleaner
 brew cask install cheatsheet
+# brew cask install cleartext
 brew cask install deezer
 # brew cask install disk-doctor
 brew cask install flash-player
