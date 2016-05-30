@@ -14,19 +14,23 @@ npm update -g
 
 # Install packages for Node.
 npm install -g babel-cli
+npm install -g babel-core
 npm install -g babel-eslint
+npm install -g babel-loader
+npm install -g babel-preset-es2015
 npm install -g babel-preset-react
-npm install -g babelify
 npm install -g eslint
 npm install -g eslint-plugin-react
 npm install -g express
 npm install -g imageoptim-cli
+npm install -g json-server
 npm install -g npm
 npm install -g phantomjs
 npm install -g react
 npm install -g react-dom
 npm install -g socket.io
 npm install -g webpack
+npm install -g webpack-dev-server
 npm install -g write-good
 
 
