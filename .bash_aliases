@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Easier Navigations.
 alias ..="cd .."
 alias ...="cd ../../"

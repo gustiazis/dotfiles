@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Determine size of a file or total size of a directory.
 function fs() {
 	if du -b /dev/null > /dev/null 2>&1; then

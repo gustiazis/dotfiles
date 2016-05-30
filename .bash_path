@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Add Some Path to the `$PATH`.
 export PATH="/usr/local/sbin:$PATH";
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
