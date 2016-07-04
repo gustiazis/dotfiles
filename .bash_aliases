@@ -82,11 +82,14 @@ alias fixow="/System/Library/Frameworks/CoreServices.framework/Versions/A/Framew
 # Recursively delete `.DS_Store` files.
 alias cleanup-dss="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Recursively delete `.localized` files.
-alias cleanup-localized="find . -type f -name '*.localized' -ls -delete"
+# Recursively remove all empty directories
+alias cleanup-empty-folders="find . -type d -empty -delete"
 
 # Clear bash history completely.
 alias cleanup-history="cat /dev/null > ~/.bash_history && history -c && exit"
+
+# Recursively delete `.localized` files.
+alias cleanup-localized="find . -type f -name '*.localized' -ls -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD.
 # Also, clear Apple’s System Logs to improve shell startup speed.
