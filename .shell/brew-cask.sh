@@ -36,11 +36,10 @@ brew cask install aerial
 brew cask install appcleaner
 brew cask install cheatsheet
 # brew cask install cleartext
-brew cask install deezer
 # brew cask install disk-doctor
 brew cask install flash-player
 # brew cask install icons8
-# brew cask install handbrake
+brew cask install handbrake
 brew cask install id3-editor
 brew cask install imagealpha
 brew cask install imageoptim
@@ -49,6 +48,7 @@ brew cask install iterm2
 # brew cask install jpegmini
 brew cask install java7
 brew cask install spectacle
+brew cask install spotify
 brew cask install sublime-text3
 brew cask install teamviewer
 brew cask install the-unarchiver
