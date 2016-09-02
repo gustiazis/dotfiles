@@ -74,7 +74,7 @@ brew install php56 --enable-maintainer-zts --build-from-source
 brew install php56-igbinary --build-from-source
 brew install php56-redis --build-from-source
 brew install php56-mcrypt --build-from-source
-# brew install phpmyadmin
+brew install php56-memcached --build-from-source
 
 # Remove outdated versions from the cellar.
 brew cleanup
