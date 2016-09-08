@@ -32,7 +32,7 @@ brew cask install qlvideo
 brew cask install provisionql
 
 # Install Apps.
-brew cask install aerial
+# brew cask install aerial
 brew cask install appcleaner
 brew cask install cheatsheet
 # brew cask install cleartext
@@ -40,7 +40,7 @@ brew cask install cheatsheet
 brew cask install flash-player
 # brew cask install icons8
 brew cask install handbrake
-brew cask install id3-editor
+# brew cask install id3-editor
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install inkscape
