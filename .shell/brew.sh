@@ -51,6 +51,7 @@ brew install ffmpeg
 brew install gifsicle
 brew install git
 brew install git-lfs
+brew install htop
 brew install imagemagick
 # brew install lynx
 brew install mongodb
