@@ -13,7 +13,7 @@ xcode-select --install
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Executes All.
-source osx.sh
+source macos.sh
 source brew.sh
 source brew-cask.sh
 source npm.sh

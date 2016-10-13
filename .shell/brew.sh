@@ -17,7 +17,7 @@ brew tap homebrew/versions
 brew tap homebrew/dupes
 brew tap homebrew/php
 
-# Install GNU core utilities (those that come with OS X are outdated).
+# Install GNU core utilities (those that come with macOS are outdated).
 brew install coreutils
 
 # Install GNU another utilities.
@@ -38,7 +38,7 @@ fi;
 # Install `wget` with IRI support.
 brew install wget --with-iri
 
-# Install more recent versions of some OS X tools.
+# Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
 brew install grep
 brew install openssh

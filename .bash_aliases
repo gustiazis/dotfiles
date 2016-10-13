@@ -35,7 +35,7 @@ alias github="chrome 'http://github.com/gustiazis'"
 # Detect Which `ls` flavor is in use.
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	lsflag="--color --group-directories-first"
-else # OS X `ls`
+else # macOS `ls`
 	lsflag="-G"
 fi
 
@@ -56,12 +56,12 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-# Get OS X Software Updates, Update Installed Homebrew, NPM, and Ruby Gems.
-alias update-osx='sudo softwareupdate -i -a'
+# Get macOS Software Updates, Update Installed Homebrew, NPM, and Ruby Gems.
+alias update-macos='sudo softwareupdate -i -a'
 alias update-brew='brew update; brew upgrade --all; brew cleanup'
 alias update-npm='npm install npm -g; npm update -g; npm cache clean'
 alias update-gem='sudo gem update --system; sudo gem update'
-alias update-all='update-osx; update-brew; update-npm; update-gem'
+alias update-all='update-macos; update-brew; update-npm; update-gem'
 
 # IP Addresses.
 alias ipp="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -123,10 +123,10 @@ alias reload="exec $SHELL -l"
 # Canonical hex dump; some systems have this symlinked.
 command -v hd > /dev/null || alias hd="hexdump -C"
 
-# OS X has no `md5sum`, so use `md5` as a fallback.
+# macOS has no `md5sum`, so use `md5` as a fallback.
 command -v md5sum > /dev/null || alias md5sum="md5"
 
-# OS X has no `sha1sum`, so use `shasum` as a fallback.
+# macOS has no `sha1sum`, so use `shasum` as a fallback.
 command -v sha1sum > /dev/null || alias sha1sum="shasum"
 
 # JavaScriptCore REPL.
