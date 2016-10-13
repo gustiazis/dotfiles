@@ -60,7 +60,7 @@ alias egrep='egrep --color=auto'
 alias update-macos='sudo softwareupdate -i -a'
 alias update-brew='brew update; brew upgrade --all; brew cleanup'
 alias update-npm='npm install npm -g; npm update -g; npm cache clean'
-alias update-gem='sudo gem update --system; sudo gem update'
+alias update-gem='sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias update-all='update-macos; update-brew; update-npm; update-gem'
 
 # IP Addresses.
