@@ -5,9 +5,6 @@ sudo bash -c 'echo /usr/local/bin/bash >> /etc/shells'
 # Change to the new shell.
 chsh -s /usr/local/bin/bash
 
-# Symlink gsha256sum to sha256sum.
-sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
-
 # Configure Sublime Text as the Git Mergetool.
 git config --global mergetool.sublime.cmd "subl -w \$MERGED"
 git config --global mergetool.sublime.trustExitCode false
