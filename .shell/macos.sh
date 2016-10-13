@@ -31,7 +31,8 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate.
-defaults write NSGlobalDomain KeyRepeat -float 0.000000000001
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Save screenshots to the Screenshots.
 defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screenshots"
