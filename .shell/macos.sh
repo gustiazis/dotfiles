@@ -40,6 +40,9 @@ defaults write com.apple.screencapture location -string "${HOME}/Pictures/Screen
 # When performing a search, search the current folder by default.
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
 # Disable the warning when changing a file extension.
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
