@@ -104,6 +104,10 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias hide-desktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias show-desktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
+# Disable/Enable Airdrop.
+alias airdrop-off="defaults write com.apple.NetworkBrowser DisableAirDrop -bool YES"
+alias airdrop-on="defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO"
+
 # Disable/Enable Spotlight.
 alias spotlight-off="sudo mdutil -a -i off"
 alias spotlight-on="sudo mdutil -a -i on"
