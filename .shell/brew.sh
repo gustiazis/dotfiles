@@ -64,6 +64,7 @@ brew install redis
 brew install rtmpdump
 brew install testssl
 brew install tree
+brew install watchman
 # brew install webkit2png
 brew install youtube-dl
 brew install zsh
