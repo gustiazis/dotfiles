@@ -33,11 +33,13 @@ brew cask install provisionql
 
 # Install Apps.
 # brew cask install aerial
+brew cask install android-studio
 brew cask install appcleaner
 brew cask install cheatsheet
 # brew cask install cleartext
 # brew cask install disk-doctor
 brew cask install flash-player
+brew cask install genymotion
 # brew cask install icons8
 brew cask install handbrake
 # brew cask install id3-editor
@@ -54,6 +56,7 @@ brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install torbrowser
 brew cask install transmission
+brew cask install virtualbox
 brew cask install vlc
 # brew cask install xampp
 brew cask install xquartz
