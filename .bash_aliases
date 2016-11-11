@@ -11,8 +11,9 @@ alias ~~="cd -"
 alias c="clear"
 alias g="git"
 alias o="open"
-alias ant="./ant"
 alias dev="cd ~/Developments"
+alias nlg="npm list -g --depth=0 2>/dev/null"
+alias nll="npm list --depth=0 2>/dev/null"
 
 # Command Shortcuts.
 alias sudo="sudo "
