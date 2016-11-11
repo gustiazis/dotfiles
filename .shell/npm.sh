@@ -34,6 +34,7 @@ npm install -g socket.io
 npm install -g webpack
 npm install -g webpack-dev-server
 npm install -g write-good
+npm install -g yarn
 
 
 # Clean npm packages cache.
