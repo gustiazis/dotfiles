@@ -57,6 +57,7 @@ brew install imagemagick
 brew install mongodb
 brew install ngrep
 brew install node
+brew install putty
 # brew install pv
 # brew install rhino
 brew install rename
@@ -64,6 +65,7 @@ brew install redis
 brew install rtmpdump
 brew install testssl
 brew install tree
+brew install watch
 brew install watchman
 # brew install webkit2png
 brew install youtube-dl
