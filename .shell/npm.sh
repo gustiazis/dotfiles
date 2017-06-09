@@ -28,6 +28,7 @@ npm install -g npm
 npm install -g phantomjs
 npm install -g react
 npm install -g react-dom
+npm install -g react-native-cli
 npm install -g react-router
 npm install -g redux
 npm install -g socket.io
