@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 
 # Add Some Path to the `$PATH`.
-# export PATH="/usr/local/sbin:$PATH";
+export PATH="/usr/local/sbin:$PATH";
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH";
-export ANDROID_HOME="~/Library/Android/sdk";
-# export PATH="${PATH}:${ANDROID_HOME}/tools";
+export PATH="/usr/local/Cellar/node/8.1.2/bin:$PATH";
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.7)";
+export ANDROID_HOME="${HOME}/Library/Android/sdk";
+export PATH="${PATH}:${ANDROID_HOME}/tools";
+export PATH="${PATH}:${ANDROID_HOME}/platform-tools";
