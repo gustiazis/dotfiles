@@ -46,6 +46,7 @@ brew install screen
 
 # Install other useful binaries.
 brew install ack
+brew install cocoapods
 # brew install exiv2
 brew install ffmpeg
 brew install gifsicle
