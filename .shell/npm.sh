@@ -20,22 +20,22 @@ npm install -g write-good
 npm install -g yarn
 
 # Install packages for Node using Yarn.
-yarn global add -g babel-cli
-yarn global add -g babel-core
-yarn global add -g babel-eslint
-yarn global add -g babel-loader
-yarn global add -g babel-preset-es2015
-yarn global add -g babel-preset-react
-yarn global add -g eslint
-yarn global add -g eslint-plugin-react
-yarn global add -g express
-yarn global add -g phantomjs
-yarn global add -g react
-yarn global add -g react-dom
-yarn global add -g react-native-cli
-yarn global add -g redux
-yarn global add -g webpack
-yarn global add -g webpack-dev-server
+yarn global add babel-cli
+yarn global add babel-core
+yarn global add babel-eslint
+yarn global add babel-loader
+yarn global add babel-preset-es2015
+yarn global add babel-preset-react
+yarn global add eslint
+yarn global add eslint-plugin-react
+yarn global add express
+yarn global add phantomjs
+yarn global add react
+yarn global add react-dom
+yarn global add react-native-cli
+yarn global add redux
+yarn global add webpack
+yarn global add webpack-dev-server
 
 
 # Clean npm packages cache.
