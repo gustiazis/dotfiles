@@ -13,29 +13,29 @@ npm install npm -g
 npm update -g
 
 # Install packages for Node.
-npm install -g babel-cli
-npm install -g babel-core
-npm install -g babel-eslint
-npm install -g babel-loader
-npm install -g babel-preset-es2015
-npm install -g babel-preset-react
-npm install -g eslint
-npm install -g eslint-plugin-react
-npm install -g express
 npm install -g imageoptim-cli
 npm install -g json-server
 npm install -g npm
-npm install -g phantomjs
-npm install -g react
-npm install -g react-dom
-npm install -g react-native-cli
-npm install -g react-router
-npm install -g redux
-npm install -g socket.io
-npm install -g webpack
-npm install -g webpack-dev-server
 npm install -g write-good
 npm install -g yarn
+
+# Install packages for Node using Yarn.
+yarn global add -g babel-cli
+yarn global add -g babel-core
+yarn global add -g babel-eslint
+yarn global add -g babel-loader
+yarn global add -g babel-preset-es2015
+yarn global add -g babel-preset-react
+yarn global add -g eslint
+yarn global add -g eslint-plugin-react
+yarn global add -g express
+yarn global add -g phantomjs
+yarn global add -g react
+yarn global add -g react-dom
+yarn global add -g react-native-cli
+yarn global add -g redux
+yarn global add -g webpack
+yarn global add -g webpack-dev-server
 
 
 # Clean npm packages cache.
