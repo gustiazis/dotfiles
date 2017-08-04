@@ -42,7 +42,7 @@ brew cask install cyberduck
 brew cask install flash-player
 brew cask install genymotion
 # brew cask install icons8
-brew cask install handbrake
+# brew cask install handbrake
 # brew cask install id3-editor
 brew cask install imagealpha
 brew cask install imageoptim
