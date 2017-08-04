@@ -49,7 +49,7 @@ brew cask install genymotion
 brew cask install inkscape
 brew cask install iterm2
 # brew cask install jpegmini
-brew cask install java7
+brew cask install java8
 brew cask install spectacle
 brew cask install spotify
 brew cask install sublime-text3
