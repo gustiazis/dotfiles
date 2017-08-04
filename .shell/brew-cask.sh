@@ -39,7 +39,6 @@ brew cask install cheatsheet
 # brew cask install cleartext
 brew cask install cyberduck
 # brew cask install disk-doctor
-brew cask install flash-player
 brew cask install genymotion
 # brew cask install icons8
 # brew cask install handbrake
