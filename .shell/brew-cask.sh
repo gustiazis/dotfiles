@@ -51,7 +51,7 @@ brew cask install iterm2
 brew cask install java
 brew cask install spectacle
 brew cask install spotify
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install teamviewer
 brew cask install the-unarchiver
 brew cask install torbrowser
