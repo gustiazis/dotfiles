@@ -123,16 +123,3 @@ function get_ssl() {
 function trees() {
 	tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
-
-# Automates ImageOptim, ImageAlpha, and JPEGmini after that cleanup the trash.
-function imagemin() {
-	if [ -n "$1" ]; then
-		if [ -d "$1" ]; then
-			imageoptim -a -j -q -d "$1" && cleanup-trash;
-		else
-			echo "ERROR: Folder not found.";
-		fi;
-	else
-		echo "ERROR: No folder specified.";
-	fi;
-}
