@@ -21,7 +21,9 @@
 	[
 		".git",
 		".meteor",
-		"node_modules"
+		"node_modules",
+		"android/build",
+		"ios/build"
 	],
 	"font_face": "Office Code Pro",
 	"font_size": 14,
