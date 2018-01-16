@@ -73,10 +73,6 @@ alias dns="scutil --dns | grep 'nameserver\[[0-9]*\]'"
 # Flush DNS Cache.
 alias flush-dns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 
-# View HTTP Traffic.
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
 # Remove Duplicates from the “Open With” Right-Click Menu.
 alias fixow="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;"
 
