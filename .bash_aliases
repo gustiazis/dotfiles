@@ -69,6 +69,7 @@ alias ipp="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ipl="ipconfig getifaddr en0"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias dns="scutil --dns | grep 'nameserver\[[0-9]*\]'"
+alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
 # Flush DNS Cache.
 alias flush-dns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
