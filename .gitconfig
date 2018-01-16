@@ -31,7 +31,6 @@
 
 	# Amend the currently staged files to the latest commit
 	amend = commit --amend --reuse-message=HEAD
-	# amend = commit --amend --no-edit
 
 	# Credit an author on the latest commit.
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
@@ -46,7 +45,7 @@
 	contributors = shortlog --summary --numbered
 
 	# Ignore files only locally.
-	au = !"git update-index --assume-unchanged"
+	au = "!git update-index --assume-unchanged"
 
 [apply]
 
@@ -58,6 +57,8 @@
 	attributesfile = ~/.gitattributes
 	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
 	trustctime = false
+	precomposeunicode = false
+	untrackedCache = true
 	editor = subl -n -w
 
 [color]
