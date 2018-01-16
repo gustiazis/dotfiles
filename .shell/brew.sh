@@ -10,7 +10,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Adds more repos to formulae.
 brew tap homebrew/versions
@@ -47,20 +47,16 @@ brew install screen
 # Install other useful binaries.
 brew install ack
 brew install cocoapods
-# brew install exiv2
 brew install ffmpeg
 brew install gifsicle
 brew install git
 brew install git-lfs
 brew install htop
-brew install imagemagick
-# brew install lynx
+brew install imagemagick --with-webp
 brew install mongodb
 brew install ngrep
 brew install node
 brew install putty
-# brew install pv
-# brew install rhino
 brew install rename
 brew install redis
 brew install rtmpdump
@@ -68,10 +64,7 @@ brew install testssl
 brew install tree
 brew install watch
 brew install watchman
-# brew install webkit2png
 brew install youtube-dl
-brew install zsh
-brew install zsh-completions
 
 # Install MySQL, PHP, and common formulae.
 brew install mysql
