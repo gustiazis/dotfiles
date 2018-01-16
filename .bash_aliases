@@ -59,7 +59,7 @@ alias egrep='egrep --color=auto'
 
 # Get macOS Software Updates, Update Installed Homebrew, NPM, and Ruby Gems.
 alias update-macos='sudo softwareupdate -i -a'
-alias update-brew='brew update; brew upgrade --all; brew cleanup'
+alias update-brew='brew update; brew upgrade; brew cleanup'
 alias update-npm='npm i -g npm; npm update -g; npm cache clean'
 alias update-gem='sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias update-all='update-macos; update-brew; update-npm; update-gem'
