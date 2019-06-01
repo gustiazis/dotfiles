@@ -52,7 +52,7 @@ brew install gifsicle
 brew install git
 brew install git-lfs
 brew install htop
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install mongodb
 brew install ngrep
 brew install node
