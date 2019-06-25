@@ -15,7 +15,6 @@ brew upgrade
 # Adds more repos to formulae.
 brew tap homebrew/versions
 brew tap homebrew/dupes
-brew tap homebrew/php
 
 # Install GNU core utilities (those that come with macOS are outdated).
 brew install coreutils
@@ -54,6 +53,7 @@ brew install git-lfs
 brew install htop
 brew install imagemagick
 brew install mongodb
+brew install mysql
 brew install ngrep
 brew install node
 brew install putty
@@ -65,14 +65,6 @@ brew install tree
 brew install watch
 brew install watchman
 brew install youtube-dl
-
-# Install MySQL, PHP, and common formulae.
-brew install mysql
-brew install php56 --enable-maintainer-zts --build-from-source
-brew install php56-igbinary --build-from-source
-brew install php56-redis --build-from-source
-brew install php56-mcrypt --build-from-source
-brew install php56-memcached --build-from-source
 
 # Remove outdated versions from the cellar.
 brew cleanup
