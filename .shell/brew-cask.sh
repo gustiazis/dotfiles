@@ -12,11 +12,6 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade --all
 
-# Adds more repos to formulae.
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap caskroom/fonts
-
 # Install Quick Look Plugins.
 brew cask install qlcolorcode
 brew cask install qlstephen
@@ -24,12 +19,13 @@ brew cask install qlmarkdown
 brew cask install qlprettypatch
 brew cask install quicklook-json
 brew cask install quicklook-csv
-brew cask install betterzipql
+brew cask install betterzip
 # brew cask install qlimagesize
 brew cask install webpquicklook
 brew cask install suspicious-package
 brew cask install qlvideo
 brew cask install provisionql
+brew cask install quicklookapk
 
 # Install Apps.
 # brew cask install aerial
@@ -39,33 +35,30 @@ brew cask install cheatsheet
 # brew cask install cleartext
 brew cask install cyberduck
 # brew cask install disk-doctor
+brew cask install firefox
 brew cask install genymotion
-# brew cask install icons8
+brew cask install google-chrome
 # brew cask install handbrake
-# brew cask install id3-editor
 brew cask install imagealpha
 brew cask install imageoptim
-brew cask install inkscape
-brew cask install iterm2
+# brew cask install inkscape
+# brew cask install iterm2
 # brew cask install jpegmini
 brew cask install java
+brew cask install postman
+brew cask install robo-3t
 brew cask install spectacle
 brew cask install spotify
+brew cask install steam
 brew cask install sublime-text
-brew cask install teamviewer
+# brew cask install teamviewer
 brew cask install the-unarchiver
-brew cask install torbrowser
+brew cask install tor-browser
 brew cask install transmission
 brew cask install virtualbox
 brew cask install vlc
 # brew cask install xampp
-brew cask install xquartz
-
-# Install Fonts.
-brew cask install font-source-code-pro
-brew cask install font-office-code-pro
-brew cask install font-open-sans
-# brew cask install font-segoe-ui
+# brew cask install xquartz
 
 # Remove outdated versions from the cellar.
-brew cask cleanup
+brew cleanup
