@@ -49,6 +49,7 @@ brew cask install inkscape
 brew cask install iterm2
 # brew cask install jpegmini
 brew cask install java
+brew cask install sequel-pro
 brew cask install spectacle
 brew cask install spotify
 brew cask install sublime-text
