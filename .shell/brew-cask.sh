@@ -48,7 +48,6 @@ brew cask install java
 brew cask install postman
 brew cask install robo-3t
 brew cask install sequel-pro
-brew cask install sequel-pro
 brew cask install spectacle
 brew cask install spotify
 brew cask install steam
