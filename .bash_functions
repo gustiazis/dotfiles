@@ -110,7 +110,7 @@ function trees() {
 function imagemin() {
 	if [ -n "$1" ]; then
 		if [ -d "$1" ]; then
-			imageoptim -a -j -q -d "$1" && cleanup-trash;
+			imageoptim -a -j "$1" && cleanup-trash;
 		else
 			echo "ERROR: Folder not found.";
 		fi;
