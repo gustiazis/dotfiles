@@ -47,8 +47,9 @@ brew cask install imageoptim
 # brew cask install iterm2
 # brew cask install jpegmini
 brew cask install postman
-brew cask install robo-3t
+# brew cask install robo-3t
 brew cask install sequel-pro
+brew cask install studio-3t
 brew cask install spectacle
 brew cask install spotify
 brew cask install sublime-text
