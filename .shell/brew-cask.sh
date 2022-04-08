@@ -13,54 +13,56 @@ brew update
 brew upgrade
 
 # Install Quick Look Plugins.
-brew cask install qlcolorcode
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install qlprettypatch
-brew cask install quicklook-json
-brew cask install quicklook-csv
-brew cask install betterzip
-# brew cask install qlimagesize
-brew cask install webpquicklook
-brew cask install suspicious-package
-brew cask install qlvideo
-brew cask install provisionql
-brew cask install quicklookapk
+brew install --cask provisionql
+brew install --cask qlcolorcode
+# brew install --cask qlimagesize
+brew install --cask qlmarkdown
+brew install --cask qlprettypatch
+brew install --cask qlstephen
+brew install --cask qlvideo
+brew install --cask quicklookapk
+brew install --cask quicklook-csv
+brew install --cask quicklook-json
+brew install --cask webpquicklook
+brew install --cask betterzip
+brew install --cask suspicious-package
 
 # Install Apps.
+# brew install --cask aerial
+brew install --cask android-studio
+brew install --cask appcleaner
+brew install --cask cheatsheet
+brew install --cask cleartext
+brew install --cask cyberduck
+# brew install --cask disk-doctor
+brew install --cask firefox
+# brew install --cask genymotion
+brew install --cask google-chrome
+# brew install --cask handbrake
+brew install --cask imagealpha
+brew install --cask imageoptim
+# brew install --cask inkscape
+# brew install --cask iterm2
+# brew install --cask jpegmini
+brew install --cask postman
+# brew install --cask robo-3t
+brew install --cask sequel-pro
+brew install --cask studio-3t
+brew install --cask spectacle
+brew install --cask spotify
+brew install --cask sublime-text
+# brew install --cask teamviewer
+brew install --cask the-unarchiver
+brew install --cask tor-browser
+brew install --cask transmission
+# brew install --cask virtualbox
+brew install --cask vlc
+# brew install --cask xampp
+# brew install --cask xquartz
+
+brew install maven
 brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk8
-# brew cask install aerial
-brew cask install android-studio
-brew cask install appcleaner
-brew cask install cheatsheet
-brew cask install cleartext
-brew cask install cyberduck
-# brew cask install disk-doctor
-brew cask install firefox
-# brew cask install genymotion
-brew cask install google-chrome
-# brew cask install handbrake
-brew cask install imagealpha
-brew cask install imageoptim
-# brew cask install inkscape
-# brew cask install iterm2
-# brew cask install jpegmini
-brew cask install postman
-# brew cask install robo-3t
-brew cask install sequel-pro
-brew cask install studio-3t
-brew cask install spectacle
-brew cask install spotify
-brew cask install sublime-text
-# brew cask install teamviewer
-brew cask install the-unarchiver
-brew cask install tor-browser
-brew cask install transmission
-# brew cask install virtualbox
-brew cask install vlc
-# brew cask install xampp
-# brew cask install xquartz
+brew install --cask adoptopenjdk8
 
 # Remove outdated versions from the cellar.
 brew cleanup

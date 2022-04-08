@@ -23,6 +23,7 @@ git mergetool -y
 # DocBlockr
 # Git
 # GraphQL
+# HTML-CSS-JS Prettify
 # Javascript & NodeJS Snippets
 # JsPrettier
 # PackageResourceViewer
@@ -30,6 +31,7 @@ git mergetool -y
 # SublimeLinter
 # SublimeLinter-eslint
 # Swift
+# Text Pastry
 # TrailingSpaces
 # VimL
 

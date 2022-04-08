@@ -48,7 +48,6 @@ brew install gifsicle
 # brew install git-lfs
 brew install htop
 brew install imagemagick
-brew install mongodb
 brew install mysql
 brew install ngrep
 brew install node
@@ -62,6 +61,9 @@ brew install watch
 brew install watchman
 brew install yarn
 # brew install youtube-dl
+
+brew tap mongodb/brew
+brew install mongodb-community
 
 # Remove outdated versions from the cellar.
 brew cleanup
