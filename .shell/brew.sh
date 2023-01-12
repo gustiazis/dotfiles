@@ -41,26 +41,27 @@ brew install screen
 
 # Install other useful binaries.
 brew install ack
-brew install cocoapods
+# brew install cocoapods
 brew install ffmpeg
 brew install gifsicle
-# brew install git
-# brew install git-lfs
 brew install htop
 brew install imagemagick
+brew install imageoptim-cli
+brew install md5sha1sum
 brew install mysql
 brew install ngrep
-brew install node
+brew install nvm
+brew install postgresql@14
 brew install putty
+brew install pwgen
+brew install pyenv
+brew install rbenv
 brew install rename
-brew install redis
-brew install rtmpdump
 brew install testssl
 brew install tree
 brew install watch
 brew install watchman
 brew install yarn
-# brew install youtube-dl
 
 brew tap mongodb/brew
 brew install mongodb-community

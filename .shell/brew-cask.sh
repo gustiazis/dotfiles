@@ -41,28 +41,28 @@ brew install --cask google-chrome
 # brew install --cask handbrake
 brew install --cask imagealpha
 brew install --cask imageoptim
-# brew install --cask inkscape
 # brew install --cask iterm2
 # brew install --cask jpegmini
+# brew install --cask pgAdmin
 brew install --cask postman
 # brew install --cask robo-3t
-brew install --cask sequel-pro
+# brew install --cask sequel-pro
 brew install --cask studio-3t
 brew install --cask spectacle
 brew install --cask spotify
 brew install --cask sublime-text
 # brew install --cask teamviewer
+brew install --cask telegram
 brew install --cask the-unarchiver
 brew install --cask tor-browser
 brew install --cask transmission
-# brew install --cask virtualbox
 brew install --cask vlc
+brew install --cask whatsapp
 # brew install --cask xampp
 # brew install --cask xquartz
 
-brew install maven
-brew tap AdoptOpenJDK/openjdk
-brew install --cask adoptopenjdk8
+brew tap homebrew/cask-versions
+brew install --cask zulu11
 
 # Remove outdated versions from the cellar.
 brew cleanup

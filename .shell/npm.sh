@@ -13,18 +13,13 @@ npm install npm -g
 npm update -g
 
 # Install packages for Node.
-npm install -g babel-cli
-npm install -g babel-eslint
-npm install -g eslint
-npm install -g expo-cli
-npm install -g imageoptim-cli
-npm install -g json-server
-npm install -g npm
-npm install -g react-devtools
-npm install -g react-native-cli
-npm install -g react-native-git-upgrade
-npm install -g react-native-rename
-npm install -g write-good
+# npm install -g @babel-cli
+# npm install -g @babel/eslint-parser
+# npm install -g eslint
+# npm install -g expo-cli
+# npm install -g react-devtools
+# npm install -g @react-native-community/cli
+# npm install -g write-good
 
 
 # Clean npm packages cache.

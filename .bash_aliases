@@ -60,7 +60,7 @@ alias egrep='egrep --color=auto'
 # Get macOS Software Updates, Update Installed Homebrew, NPM, and Ruby Gems.
 alias update-macos='sudo softwareupdate -i -a'
 alias update-brew='brew update; brew upgrade; brew cleanup'
-alias update-npm='npm i -g npm; npm update -g; npm cache clean'
+alias update-npm='npm install npm -g; npm update -g; npm cache clean'
 alias update-gem='sudo gem update --system; sudo gem update; sudo gem cleanup'
 alias update-all='update-macos; update-brew; update-npm; update-gem'
 
@@ -74,17 +74,17 @@ alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'
 # Flush DNS Cache.
 alias flush-dns="sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder"
 
-# Remove Duplicates from the “Open With” Right-Click Menu.
-alias fixow="/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/Support/lsregister -kill -r -domain local -domain user;killall Finder;"
+# Clean up LaunchServices to remove duplicates in the “Open With” menu.
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder;"
+
+# Clear bash history completely.
+alias cleanup-history="cat /dev/null > ~/.bash_history && history -c && exit"
 
 # Recursively delete `.DS_Store` files.
 alias cleanup-dss="find . -type f -name '*.DS_Store' -ls -delete"
 
-# Recursively remove all empty directories
+# Recursively remove all empty directories.
 alias cleanup-empty-folders="find . -type d -empty -delete"
-
-# Clear bash history completely.
-alias cleanup-history="cat /dev/null > ~/.bash_history && history -c && exit"
 
 # Recursively delete `.localized` files.
 alias cleanup-localized="find . -type f -name '*.localized' -ls -delete"
@@ -102,13 +102,12 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 alias hide-desktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias show-desktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
-# Disable/Enable Airdrop.
-alias airdrop-off="defaults write com.apple.NetworkBrowser DisableAirDrop -bool YES"
-alias airdrop-on="defaults write com.apple.NetworkBrowser DisableAirDrop -bool NO"
-
 # Disable/Enable Spotlight.
 alias spotlight-off="sudo mdutil -a -i off"
 alias spotlight-on="sudo mdutil -a -i on"
+
+# PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
+alias plistbuddy="/usr/libexec/PlistBuddy"
 
 # Lock the screen.
 alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend"
