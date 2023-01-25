@@ -41,7 +41,6 @@ brew install screen
 
 # Install other useful binaries.
 brew install ack
-# brew install cocoapods
 brew install ffmpeg
 brew install gifsicle
 brew install htop
@@ -51,7 +50,7 @@ brew install md5sha1sum
 brew install mysql
 brew install ngrep
 brew install nvm
-brew install postgresql@14
+# brew install postgresql@14
 brew install putty
 brew install pwgen
 brew install pyenv

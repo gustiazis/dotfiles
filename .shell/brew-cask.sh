@@ -10,7 +10,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade
+brew upgrade --cask
 
 # Install Quick Look Plugins.
 brew install --cask provisionql
@@ -36,7 +36,7 @@ brew install --cask cleartext
 brew install --cask cyberduck
 # brew install --cask disk-doctor
 brew install --cask firefox
-# brew install --cask genymotion
+brew install --cask genymotion
 brew install --cask google-chrome
 # brew install --cask handbrake
 brew install --cask imagealpha
@@ -54,9 +54,9 @@ brew install --cask sublime-text
 # brew install --cask teamviewer
 brew install --cask telegram
 brew install --cask the-unarchiver
-brew install --cask tor-browser
+# brew install --cask tor-browser
 brew install --cask transmission
-brew install --cask vlc
+# brew install --cask vlc
 brew install --cask whatsapp
 # brew install --cask xampp
 # brew install --cask xquartz
