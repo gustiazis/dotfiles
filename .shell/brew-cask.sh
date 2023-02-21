@@ -26,8 +26,12 @@ brew install --cask quicklook-json
 brew install --cask webpquicklook
 brew install --cask betterzip
 brew install --cask suspicious-package
+brew install --cask apparency
+brew install --cask --no-quarantine syntax-highlight
+# brew install --cask --no-quarantine peek
 
 # Install Apps.
+# brew install --cask adobe-photoshop-2023
 # brew install --cask aerial
 brew install --cask android-studio
 brew install --cask appcleaner
@@ -36,12 +40,12 @@ brew install --cask cleartext
 brew install --cask cyberduck
 # brew install --cask disk-doctor
 brew install --cask firefox
-brew install --cask genymotion
+# brew install --cask genymotion
 brew install --cask google-chrome
 # brew install --cask handbrake
+brew install --cask hex-fiend
 brew install --cask imagealpha
 brew install --cask imageoptim
-# brew install --cask iterm2
 # brew install --cask jpegmini
 # brew install --cask pgAdmin
 brew install --cask postman
@@ -57,8 +61,8 @@ brew install --cask the-unarchiver
 # brew install --cask tor-browser
 brew install --cask transmission
 # brew install --cask vlc
+brew install --cask warp
 brew install --cask whatsapp
-# brew install --cask xampp
 # brew install --cask xquartz
 
 brew tap homebrew/cask-versions

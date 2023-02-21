@@ -41,6 +41,7 @@ brew install screen
 
 # Install other useful binaries.
 brew install ack
+brew install eslint
 brew install ffmpeg
 brew install gifsicle
 brew install htop
@@ -49,6 +50,7 @@ brew install imageoptim-cli
 brew install md5sha1sum
 brew install mysql
 brew install ngrep
+brew install node
 brew install nvm
 # brew install postgresql@14
 brew install putty

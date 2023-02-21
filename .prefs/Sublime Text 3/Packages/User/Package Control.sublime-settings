@@ -1,0 +1,30 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"A File Icon",
+		"ColorHelper",
+		"ColorSchemeEditor",
+		"DocBlockr",
+		"DotENV",
+		"Git",
+		"GraphQL",
+		"HTML-CSS-JS Prettify",
+		"JsPrettier",
+		"LSP",
+		"LSP-typescript",
+		"Package Control",
+		"PackageResourceViewer",
+		"rsub",
+		"SublimeLinter",
+		"SublimeLinter-eslint",
+		"Swift",
+		"Text Pastry",
+		"Theme - Spacegray",
+		"TrailingSpaces",
+		"VimL",
+	],
+	"in_process_packages":
+	[
+	],
+}

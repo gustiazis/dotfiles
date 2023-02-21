@@ -1,0 +1,7 @@
+// Settings in here override those in "/JsPrettier/JsPrettier.sublime-settings",
+
+{
+	// "node_path": "/Users/{USERNAME}/.nvm/versions/node/{NODE_VERSION}/bin/node",
+	"auto_format_on_save": true,
+	"auto_format_on_save_requires_prettier_config": true
+}

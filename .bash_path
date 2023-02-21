@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 
 # Add Some Path to the `$PATH`.
-export PATH="/usr/local/sbin:$PATH";
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH";
-export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH";
-# export PATH="/usr/local/opt/ruby/bin:$PATH";
-# export PATH="/usr/local/opt/python/bin:$PATH";
+export PATH="$(brew --prefix)/bin:$PATH";
+export PATH="$(brew --prefix)/sbin:$PATH";
+export PATH="$(brew --prefix)/opt/coreutils/libexec/gnubin:$PATH";
+export MANPATH="$(brew --prefix)/opt/coreutils/libexec/gnuman:$MANPATH";
 export JAVA_HOME="$(/usr/libexec/java_home -v $(javac -version 2>&1 | cut -d ' ' -f2))";
 export ANDROID_SDK_ROOT="${HOME}/Library/Android/sdk";
 export PATH="${PATH}:${ANDROID_SDK_ROOT}/emulator";
@@ -17,7 +16,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # Setup rbenv
-eval "$(~/.rbenv/bin/rbenv init - bash)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 # Setup pyenv
 export PYENV_ROOT="$HOME/.pyenv"

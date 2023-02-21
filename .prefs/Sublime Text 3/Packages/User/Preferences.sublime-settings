@@ -1,6 +1,5 @@
 {
 	"always_show_minimap_viewport": true,
-	"color_scheme": "Packages/User/SublimeLinter/base16-monokai.dark (SL).tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"draw_white_space": "all",
@@ -9,34 +8,34 @@
 	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
-		".DS_Store",
-		"Desktop.ini",
-		"*.pyc",
 		"._*",
+		".DS_Store",
 		"Thumbs.db",
+		"Desktop.ini",
 		".Spotlight-V100",
 		".Trashes"
 	],
 	"folder_exclude_patterns":
 	[
 		".git",
-		".meteor",
+		".next",
 		"node_modules",
 		"android/build",
 		"ios/build"
 	],
 	"font_face": "Office Code Pro",
-	"font_size": 14,
+	"font_size": 12,
 	"ignored_packages":
 	[
-		"JavaScript",
-		"Vintage"
+		"Vintage",
 	],
 	"match_brackets_angle": true,
 	"show_encoding": true,
 	"show_line_endings": true,
 	"tab_size": 2,
-	"theme": "Spacegray Monokai.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": true
+	"word_wrap": true,
+	"theme": "Spacegray Eighties.sublime-theme",
+  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+  "update_check": false,
 }

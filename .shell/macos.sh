@@ -75,6 +75,9 @@ defaults write com.apple.dock dashboard-in-overlay -bool true
 # Automatically hide and show the Dock.
 # defaults write com.apple.dock autohide -bool true
 
+# Disable show recent applicaions in Dock.
+defaults write com.apple.dock show-recents -bool false;
+
 # Enable Secure Keyboard Entry in Terminal.app
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
