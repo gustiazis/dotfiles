@@ -36,6 +36,6 @@
 	"trim_trailing_white_space_on_save": true,
 	"word_wrap": true,
 	"theme": "Spacegray Eighties.sublime-theme",
-  "color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
-  "update_check": false,
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
+	"update_check": false,
 }

@@ -20,30 +20,4 @@ mkdir ~/.pyenv
 # Allow quicklook plugins
 xattr -cr ~/Library/QuickLook/*.qlgenerator
 
-# Packages for Sublime Text.
-
-# A File Icon
-# ColorHelper
-# ColorSchemeEditor
-# DocBlockr
-# DotENV
-# Git
-# GraphQL
-# HTML-CSS-JS Prettify
-# JsPrettier
-# LSP
-# LSP-typescript
-# PackageResourceViewer
-# rsub
-# SublimeLinter
-# SublimeLinter-eslint
-# Swift
-# Text Pastry
-# Theme - Spacegray
-# TrailingSpaces
-# VimL
-
-# Tweaks for Sublime Text.
-
-# ColorSchemeEditor
-# PackageResourceViewer
+# Setup Preferences (.prefs)
