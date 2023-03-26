@@ -16,7 +16,6 @@ xcode-select --install
 source macos.sh
 source brew.sh
 source brew-cask.sh
-source npm.sh
 source setup.sh
 source ../symlinks.sh
 

@@ -40,7 +40,6 @@ brew install --cask cleartext
 brew install --cask cyberduck
 # brew install --cask disk-doctor
 brew install --cask firefox
-# brew install --cask genymotion
 brew install --cask google-chrome
 # brew install --cask handbrake
 brew install --cask hex-fiend
@@ -49,7 +48,6 @@ brew install --cask imageoptim
 # brew install --cask jpegmini
 # brew install --cask pgAdmin
 brew install --cask postman
-# brew install --cask robo-3t
 # brew install --cask sequel-pro
 brew install --cask studio-3t
 brew install --cask spectacle
@@ -60,8 +58,9 @@ brew install --cask telegram
 brew install --cask the-unarchiver
 # brew install --cask tor-browser
 brew install --cask transmission
+brew install --cask visual-studio-code
 # brew install --cask vlc
-brew install --cask warp
+# brew install --cask warp
 brew install --cask whatsapp
 # brew install --cask xquartz
 
