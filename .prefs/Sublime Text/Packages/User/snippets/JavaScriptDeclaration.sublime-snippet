@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+${1:const} ${2:declarationName} = ${3:}
+]]></content>
+  <tabTrigger>d</tabTrigger>
+  <scope>source.js,source.jsx,source.ts,source.tsx</scope>
+  <description>JavaScript Declaration with const as default</description>
+</snippet>
