@@ -1,12 +1,10 @@
 // SublimeLinter Settings - User
 {
-	// "debug": true,
-	"linters": {
-		// "eslint": {
-		// 	"env": {
-		// 		"PATH": "/Users/{USERNAME}/.nvm/versions/node/{NODE_VERSION}/bin/"
-		// 	},
-		// 	"args": ["--env=es6"]
-		// }
-	}
+	// "linters": {
+	// 	"eslint": {
+	// 		"env": {
+	// 			"PATH": "~/.nvm/versions/node/v18.16.0/bin:$PATH"
+	// 		}
+	// 	}
+	// }
 }
