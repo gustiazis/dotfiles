@@ -49,9 +49,10 @@ brew install --cask imageoptim
 # brew install --cask pgAdmin
 brew install --cask postman
 # brew install --cask sequel-pro
-brew install --cask studio-3t
+brew install --cask sound-control
 brew install --cask spectacle
 brew install --cask spotify
+brew install --cask studio-3t
 brew install --cask sublime-text
 # brew install --cask teamviewer
 brew install --cask telegram
